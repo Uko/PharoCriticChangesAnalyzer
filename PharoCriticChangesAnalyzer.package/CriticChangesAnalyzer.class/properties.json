@@ -1,0 +1,15 @@
+{
+	"category" : "PharoCriticChangesAnalyzer",
+	"classinstvars" : [
+		"changesDir",
+		"criticHistoryDir" ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CriticChangesAnalyzer",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
