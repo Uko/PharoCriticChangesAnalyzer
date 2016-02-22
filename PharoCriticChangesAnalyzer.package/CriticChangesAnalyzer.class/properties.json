@@ -2,14 +2,17 @@
 	"category" : "PharoCriticChangesAnalyzer",
 	"classinstvars" : [
 		"changesDir",
-		"criticHistoryDir" ],
+		"criticHistoryDir",
+		"default" ],
+	"classtraitcomposition" : "TVigorousCache classTrait",
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "YuriyTymchuk 2/8/2016 14:41",
 	"instvars" : [
 		 ],
 	"name" : "CriticChangesAnalyzer",
 	"pools" : [
 		 ],
 	"super" : "Object",
+	"traitcomposition" : "TVigorousCache",
 	"type" : "normal" }

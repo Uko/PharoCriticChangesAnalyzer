@@ -1,0 +1,15 @@
+{
+	"category" : "PharoCriticChangesAnalyzer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "YT 2/20/2016 17:37",
+	"instvars" : [
+		"name",
+		"package" ],
+	"name" : "CCAEntity",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

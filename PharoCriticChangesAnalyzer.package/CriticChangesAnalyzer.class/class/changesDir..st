@@ -1,3 +1,3 @@
 accessing
 changesDir: anObject
-	changesDir := anObject 
+	changesDir := anObject

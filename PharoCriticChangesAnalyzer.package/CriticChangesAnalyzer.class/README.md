@@ -1,0 +1,1 @@
+A bunch of scripts for analyzing pharo critics occurance

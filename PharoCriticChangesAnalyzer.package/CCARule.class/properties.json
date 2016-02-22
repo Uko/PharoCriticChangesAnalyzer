@@ -1,0 +1,16 @@
+{
+	"category" : "PharoCriticChangesAnalyzer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "YuriyTymchuk 2/18/2016 14:06",
+	"instvars" : [
+		"name",
+		"severity",
+		"group" ],
+	"name" : "CCARule",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

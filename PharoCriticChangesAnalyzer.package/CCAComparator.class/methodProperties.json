@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"breakVersion" : "YT 2/21/2016 20:01",
+		"critics:description:" : "YT 2/21/2016 22:39" },
+	"instance" : {
+		"histogramIn:" : "YT 2/21/2016 22:27",
+		"initializeCritics:" : "YT 2/21/2016 22:39",
+		"initializeCritics:description:" : "YT 2/21/2016 22:51",
+		"postTrend" : "YT 2/21/2016 22:57",
+		"preTrend" : "YT 2/21/2016 22:57",
+		"printOn:" : "YT 2/21/2016 22:56",
+		"printString" : "YT 2/21/2016 22:40" } }

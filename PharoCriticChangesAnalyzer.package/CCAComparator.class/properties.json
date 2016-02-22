@@ -1,0 +1,17 @@
+{
+	"category" : "PharoCriticChangesAnalyzer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "YT 2/22/2016 10:37",
+	"instvars" : [
+		"versionPoints",
+		"description",
+		"preTrend",
+		"postTrend" ],
+	"name" : "CCAComparator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

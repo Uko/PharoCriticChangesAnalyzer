@@ -1,0 +1,1 @@
+I represent a critic of an entity. By certain rule in certain version

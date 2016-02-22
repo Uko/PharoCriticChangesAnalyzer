@@ -1,5 +1,5 @@
 as yet unclassified
-numberOfCriticsByVersion
+numberOfChangedCriticsByVersion
 
-	^ self entitiesByCriticByVersion collect: [ :entitiesByCritic |
+	^ self changedEntitiesByCriticByVersion collect: [ :entitiesByCritic |
 		entitiesByCritic values inject: 0 into: [ :sum :entities | sum + entities size ]  ]
