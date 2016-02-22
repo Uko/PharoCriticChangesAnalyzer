@@ -3,14 +3,14 @@ allCriticsFromJson
 	<skipVigorousCache>
 
 	| critics rules entities |
-	critics := SortedCollection sortBlock: [ :a :b | a version < b version ].
+	critics := OrderedCollection new.
 	rules := Set new.
 	entities := Set new.
 
 	self jsonFiles do: [ :file |
 		| version |
 		version := (file basename allButLast: 5) asNumber.
-		(version - 50185) abs < 20 ifTrue: [ 
+		Transcript << 'Processing: '; << version; << Character lf.
 		(STON fromStream: file readStream) do: [ :ruleDict |
 			| rule |
 			rule := CCARule new
@@ -28,7 +28,7 @@ allCriticsFromJson
 						yourself));
 					rule: rule;
 					version: version;
-					yourself) ] ] ] ]
+					yourself) ] ] ] 
 		displayingProgress: [ :f | 'Processing ', f basename ].
 		
 	^ critics
