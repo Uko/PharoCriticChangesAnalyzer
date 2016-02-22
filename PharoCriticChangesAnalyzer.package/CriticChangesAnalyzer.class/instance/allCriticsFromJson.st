@@ -2,15 +2,16 @@ json-stuff
 allCriticsFromJson
 	<skipVigorousCache>
 
-	| critics rules entities |
+	| critics rules entities counter |
 	critics := OrderedCollection new.
 	rules := Set new.
 	entities := Set new.
+	counter := 0.
 
 	self jsonFiles do: [ :file |
 		| version |
 		version := (file basename allButLast: 5) asNumber.
-		Transcript << 'Processing: '; << critics size; << Character lf.
+		Transcript << 'Processing: '; << (counter := counter + 1); << Character lf.
 		(STON fromStream: file readStream) do: [ :ruleDict |
 			| rule |
 			rule := CCARule new
