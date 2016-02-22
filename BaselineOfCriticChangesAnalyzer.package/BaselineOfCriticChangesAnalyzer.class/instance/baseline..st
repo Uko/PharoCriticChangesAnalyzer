@@ -14,9 +14,9 @@ baseline: spec
     					version: 'stable';
     					repository: 'http://smalltalkhub.com/mc/ObjectProfile/Roassal2/main' ].
 				
-			spec project: 'SciSmalltlk' with: [
+			spec project: 'SciSmalltalk' with: [
   				spec
-    					className: 'ConfigurationOfSciSmalltlk';
+    					className: 'ConfigurationOfSciSmalltalk';
     					version: 'stable';
     					repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main' ] ]. 
 			
