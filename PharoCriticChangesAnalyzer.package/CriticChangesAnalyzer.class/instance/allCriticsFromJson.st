@@ -10,7 +10,7 @@ allCriticsFromJson
 	self jsonFiles do: [ :file |
 		| version |
 		version := (file basename allButLast: 5) asNumber.
-		Transcript << 'Processing: '; << version; << Character lf.
+		Transcript << 'Processing: '; << critics size; << Character lf.
 		(STON fromStream: file readStream) do: [ :ruleDict |
 			| rule |
 			rule := CCARule new
