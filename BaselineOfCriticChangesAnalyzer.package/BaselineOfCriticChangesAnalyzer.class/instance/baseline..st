@@ -11,13 +11,13 @@ baseline: spec
 			spec project: 'Roassal2' with: [
   				spec
     					className: 'ConfigurationOfRoassal2';
-    					version: 'stable';
+    					version: #stable;
     					repository: 'http://smalltalkhub.com/mc/ObjectProfile/Roassal2/main' ].
 				
 			spec project: 'SciSmalltalk' with: [
   				spec
     					className: 'ConfigurationOfSciSmalltalk';
-    					version: 'stable';
+    					version: #stable;
     					repository: 'http://smalltalkhub.com/mc/Pharo/MetaRepoForPharo50/main' ] ]. 
 			
 			spec
