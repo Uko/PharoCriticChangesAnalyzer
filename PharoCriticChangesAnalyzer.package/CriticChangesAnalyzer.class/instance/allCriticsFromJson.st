@@ -3,7 +3,7 @@ allCriticsFromJson
 	<skipVigorousCache>
 
 	| critics rules entities counter |
-	critics := OrderedCollection new.
+	critics := OrderedCollection new: 11e6.
 	rules := Set new.
 	entities := Set new.
 	counter := 0.
