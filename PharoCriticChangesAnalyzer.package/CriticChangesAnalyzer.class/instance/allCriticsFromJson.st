@@ -32,4 +32,4 @@ allCriticsFromJson
 					yourself) ] ] ] 
 		displayingProgress: [ :f | 'Processing ', f basename ].
 		
-	^ critics
+	^ critics asArray
