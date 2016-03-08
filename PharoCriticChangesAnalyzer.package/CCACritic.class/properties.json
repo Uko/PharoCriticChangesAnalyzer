@@ -6,8 +6,11 @@
 		 ],
 	"commentStamp" : "YuriyTymchuk 2/18/2016 14:02",
 	"instvars" : [
-		"entity",
-		"rule",
+		"entName",
+		"entPackage",
+		"rulName",
+		"rulSeverity",
+		"rulGroup",
 		"version" ],
 	"name" : "CCACritic",
 	"pools" : [

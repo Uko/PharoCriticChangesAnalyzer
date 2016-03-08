@@ -1,3 +1,3 @@
 accessing
 entName
-	^ entity name
+	^ entName

@@ -3,31 +3,25 @@ allCriticsFromJson
 	<skipVigorousCache>
 
 	| critics rules entities counter |
-	critics := OrderedCollection new: 11e6.
-	rules := Set new.
-	entities := Set new.
+	critics := OrderedCollection new: 15e6.
 	counter := 0.
 
 	self jsonFiles do: [ :file |
 		| version |
 		version := (file basename allButLast: 5) asNumber.
-		Transcript << 'Processing: '; << (counter := counter + 1); << Character lf.
 		(STON fromStream: file readStream) do: [ :ruleDict |
-			| rule |
-			rule := CCARule new
-				name: (ruleDict at: 'name');
-				group: (ruleDict at: 'group');
-				severity: (ruleDict at: 'severity');
-				yourself.
-			rule := rules nastyAdd: rule.
+			| rulName rulGroup rulSeverity |
+			rulName := (ruleDict at: 'name') asSymbol.
+			rulGroup := (ruleDict at: 'group') asSymbol.
+			rulSeverity := (ruleDict at: 'severity') asSymbol.
 				
 			(ruleDict at: 'critics') do: [ :crit |
 				critics add: (CCACritic new
-					entity: (entities nastyAdd: (CCAEntity new
-						name: (crit at: 'name');
-						package: (crit at: 'package');
-						yourself));
-					rule: rule;
+					entName: (crit at: 'name');
+					entPackage: (crit at: 'package');
+					rulName: rulName;
+					rulGroup: rulGroup;
+					rulSeverity: rulSeverity;
 					version: version;
 					yourself) ] ] ] 
 		displayingProgress: [ :f | 'Processing ', f basename ].

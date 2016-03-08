@@ -1,3 +1,3 @@
 accessing
 rulSeverity
-	^ rule severity
+	^ rulSeverity

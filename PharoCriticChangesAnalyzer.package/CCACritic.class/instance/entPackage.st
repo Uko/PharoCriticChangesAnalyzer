@@ -1,3 +1,3 @@
 accessing
 entPackage
-	^ entity package
+	^ entPackage
