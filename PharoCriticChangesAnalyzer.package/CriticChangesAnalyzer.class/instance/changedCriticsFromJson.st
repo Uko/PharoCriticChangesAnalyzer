@@ -9,7 +9,7 @@ changedCriticsFromJson
 	self jsonFiles do: [ :file |
 		| version changes |
 		version := (file basename allButLast: 5) asNumber.
-		changes := self changesByVersion at: version.
+		changes := self changesByVersion at: version ifAbsent: #().
 		
 		(STON fromStream: file readStream) do: [ :ruleDict |
 			| rulName rulGroup rulSeverity |
