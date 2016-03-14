@@ -1,9 +1,9 @@
 json-stuff
-allCriticsFromJson
+criticsFromJsonSuchThat: aBlock 
 	<skipVigorousCache>
 
 	| critics |
-	critics := OrderedCollection new: 15e6.
+	critics := OrderedCollection new.
 
 	self jsonFiles do: [ :file |
 		| version |
@@ -15,14 +15,18 @@ allCriticsFromJson
 			rulSeverity := (ruleDict at: 'severity') asSymbol.
 				
 			(ruleDict at: 'critics') do: [ :crit |
-				critics add: (CCACritic new
+				| critic |
+				critic := CCACritic new
 					entName: (crit at: 'name');
 					entPackage: (crit at: 'package');
 					rulName: rulName;
 					rulGroup: rulGroup;
 					rulSeverity: rulSeverity;
 					version: version;
-					yourself) ] ] ] 
+					yourself.
+				
+				(aBlock value: critic) ifTrue: [
+					critics add: critic ] ] ] ] 
 		displayingProgress: [ :f | 'Processing ', f basename ].
 		
 	^ critics asArray
