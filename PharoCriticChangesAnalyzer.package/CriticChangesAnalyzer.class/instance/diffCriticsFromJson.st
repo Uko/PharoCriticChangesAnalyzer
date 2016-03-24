@@ -26,7 +26,7 @@ diffCriticsFromJson
 					version: version;
 					yourself) ] ].
 			
-			lastVersionCritics ifNotNilDo: [ 
+			lastVersionCritics ifNotNil: [ 
 				lastVersionCritics do: [ :crit |
 					crit version: version ].
 				currentCritics \ lastVersionCritics
