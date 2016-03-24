@@ -1,0 +1,14 @@
+{
+	"category" : "PharoCriticChangesAnalyzer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"added" ],
+	"name" : "CCACriticChange",
+	"pools" : [
+		 ],
+	"super" : "CCACritic",
+	"type" : "normal" }

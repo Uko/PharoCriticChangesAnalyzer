@@ -2,14 +2,14 @@ json-stuff
 changedCriticsFromJson
 	<skipVigorousCache>
 
-	| critics counter |
+	| critics  |
 	critics := OrderedCollection new.
-	counter := 0.
 
 	self jsonFiles do: [ :file |
 		| version changes |
 		version := (file basename allButLast: 5) asNumber.
 		changes := self changesByVersion at: version ifAbsent: #().
+		changes ifNotEmpty: [ changes := changes collect: #name ].
 		
 		(STON fromStream: file readStream) do: [ :ruleDict |
 			| rulName rulGroup rulSeverity |

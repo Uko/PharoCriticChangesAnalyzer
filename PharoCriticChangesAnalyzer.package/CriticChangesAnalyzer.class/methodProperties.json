@@ -9,7 +9,7 @@
 	"instance" : {
 		"allCriticsFromJson" : "YuriyTymchuk 3/14/2016 13:47",
 		"changedClassNames" : "YuriyTymchuk 3/14/2016 13:54",
-		"changedCriticsFromJson" : "YuriyTymchuk 3/8/2016 16:23",
+		"changedCriticsFromJson" : "YuriyTymchuk 3/14/2016 19:46",
 		"changedEntitieNames" : "YuriyTymchuk 3/14/2016 11:47",
 		"changedEntitiesByCriticByVersion" : "YuriyTymchuk 2/5/2016 12:08",
 		"changedRuleClassNames" : "YuriyTymchuk 3/14/2016 15:23",
@@ -21,6 +21,7 @@
 		"criticFilesByVersion" : "YuriyTymchuk 2/4/2016 11:24",
 		"criticsFromJsonSuchThat:" : "YuriyTymchuk 3/14/2016 13:57",
 		"deltaOfCriticsByVersion" : "YuriyTymchuk 2/5/2016 23:23",
+		"diffCriticsFromJson" : "YuriyTymchuk 3/24/2016 16:38",
 		"entitiesByCriticByVersion" : "YuriyTymchuk 2/4/2016 12:09",
 		"jsonFiles" : "YuriyTymchuk 2/18/2016 19:15",
 		"numberOfChangedCriticsByVersion" : "YuriyTymchuk 2/5/2016 13:22",
