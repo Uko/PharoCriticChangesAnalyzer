@@ -2,6 +2,6 @@ as yet unclassified
 = otherCrit
 
 	^ self class   = otherCrit class and: [
-	self version = otherCrit version and: [ 
-	self entName = otherCrit entName and: [ 
-	self rulName = otherCrit rulName ] ] ]
+	       version = otherCrit version and: [ 
+	       entName = otherCrit entName and: [ 
+	       rulName = otherCrit rulName ] ] ]
